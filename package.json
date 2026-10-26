@@ -1,0 +1,35 @@
+{
+  "name": "latitudcero-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tienda online de Latitud Cero° — Shopify headless + Next.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "shopify:setup": "node --env-file=.env.local scripts/shopify-metafields.mjs"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "5.2.8",
+    "@fontsource-variable/league-spartan": "5.2.8",
+    "@fontsource-variable/roboto-mono": "5.2.8",
+    "@fontsource-variable/source-sans-3": "5.2.8",
+    "next": "16.4.3",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12"
+  }
+}

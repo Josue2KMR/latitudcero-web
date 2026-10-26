@@ -1,0 +1,63 @@
+/*
+ * Design tokens de Latitud Cero° — paleta "Petróleo andino".
+ * Regla: los componentes usan roles (--bg, --texto, --accion...), nunca hex sueltos.
+ * Contrastes medidos sobre --n-50 (#F7F3EA), ver docs/sistema-de-diseno.md.
+ */
+:root {
+  /* Primario · petróleo: acciones y texto destacado (8,9:1) */
+  --primario-50: #e4edf1;
+  --primario-500: #1f485a;
+  --primario-600: #173847;
+  /* Secundario · azul de la greca: íconos, bordes, barras (3,3:1, no para texto) */
+  --secundario-100: #dce8ee;
+  --secundario-500: #508ea9;
+  --secundario-700: #2e6a85; /* texto azul (5,4:1) */
+  /* Acento · naranja del rombo: con tinta encima; como texto solo el 700 */
+  --acento-100: #fbebd0;
+  --acento-500: #e49c24;
+  --acento-700: #8a5a0b;
+  /* Colores de la etiqueta impresa */
+  --etiqueta-fondo: #efede7;
+  --etiqueta-tinta: #131510;
+  --rombo-naranja: #e49c24;
+  --rombo-azul: #4884a8;
+  --rombo-rojo: #cc3018;
+  /* Neutros cálidos */
+  --n-0: #ffffff;
+  --n-50: #f7f3ea;
+  --n-100: #efe8d8;
+  --n-200: #ddd5c4;
+  --n-400: #8c8676;
+  --n-700: #55554b;
+  --n-900: #1b1d18;
+  /* Semánticos */
+  --ok: #2f6b3a;
+  --ok-bg: #e4efe2;
+  --error: #a3301a;
+  --error-bg: #fbe6e0;
+  --aviso: #8a5a0b;
+  --aviso-bg: #fbebd0;
+
+  /* Roles */
+  --bg: var(--n-50);
+  --superficie: var(--n-0);
+  --texto: var(--n-900);
+  --texto-2: var(--n-700);
+  --borde: var(--n-200);
+  --borde-campo: var(--n-400);
+  --accion: var(--primario-500);
+  --accion-hover: var(--primario-600);
+  --foco: var(--acento-500);
+
+  /* Tipografía */
+  --f-titulo: "Fraunces Variable", Georgia, "Times New Roman", serif;
+  --f-texto: "Source Sans 3 Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-dato: "Roboto Mono Variable", ui-monospace, Menlo, monospace;
+  --f-etiqueta: "League Spartan Variable", "Arial Black", sans-serif;
+
+  /* Espaciado (pasos de 4/8) y radios */
+  --e-1: 4px; --e-2: 8px; --e-3: 12px; --e-4: 16px; --e-5: 24px; --e-6: 32px; --e-7: 48px; --e-8: 64px;
+  --r-sm: 8px; --r: 14px; --r-lg: 22px;
+  --tactil: 44px;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+}
